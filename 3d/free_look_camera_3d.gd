@@ -21,6 +21,7 @@ var yaw: float
 var pitch: float
 
 func _ready() -> void:
+	target_position = global_position
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event):
