@@ -24,7 +24,7 @@ func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event):
-	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+	if event is InputEventMouseMotion:
 		# event.relative содержит "сырое" движение мыши за этот кадр
 		# Оно не сглажено и реагирует мгновенно
 		yaw -= event.relative.x * sensitivity
